@@ -1,0 +1,22 @@
+{
+  "name": "user-server.mjs",
+  "version": "1.0.0",
+  "description": "authentication for hs-members",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=users:* PORT=5858 SEQUELIZE_CONNECT='sequelize-mariadb.yaml' node ./user-server.mjs"
+  },
+  "author": "Niina Manner",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.3.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "fs-extra": "^11.2.0",
+    "js-yaml": "^4.1.0",
+    "mariadb": "^3.4.0",
+    "random": "^5.1.1",
+    "restify": "^8.0.0",
+    "sequelize": "^6.37.5"
+  }
+}
